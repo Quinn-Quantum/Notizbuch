@@ -6,6 +6,7 @@
 package View;
 
 import javax.swing.*;
+import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.io.File;
@@ -42,7 +43,6 @@ public class NeuNotiz extends JFrame {
                 //Speicher ort und lesen des Textes
                 File datei = new File ("D:\\Java\\EigeneNotizen\\"+ textTitel.getText()+".txt" );
                 if (datei.exists()){
-
 
                         textPane.setText("Datei existiert schon");
 
